@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Стоимость взрослых билетов:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/railwayTicketOut"
+        android:layout_width="367dp"
+        android:layout_height="70dp"
+        android:text="Здесь будет информация о стоимости всех взрослых билетов"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Стоимость детских билетов:"
+        app:layout_constraintBottom_toTopOf="@+id/railwayTicketChildOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/railwayTicketChildOut"
+        android:layout_width="373dp"
+        android:layout_height="73dp"
+        android:text="Здесь будет информация о стоимости всех детских билетов"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/railwayTicketOut"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="242dp"
+        android:layout_height="25dp"
+        android:text="Стоимость пенсионерских билетов:"
+        app:layout_constraintBottom_toTopOf="@+id/railwayTicketPensionerOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/railwayTicketChildOut" />
+
+    <TextView
+        android:id="@+id/railwayTicketPensionerOut"
+        android:layout_width="371dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="352dp"
+        android:text="Здесь будет информация о стоимости всех пенсионерских билетов"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Стоимость всех билетов:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/railwayTicketPensionerOut" />
+
+    <TextView
+        android:id="@+id/railwayTicketTotalOut"
+        android:layout_width="374dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="220dp"
+        android:text="Здесь будет информация о стоимости всех билетов вместе"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
